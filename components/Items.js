@@ -6,7 +6,7 @@ import { TouchableOpacity } from 'react-native-gesture-handler'
 
 export default function Items(props) {
     
-    const { name, stars,price, image, description, material} = props.data
+    const { name, stars, price, image, description, material} = props.data
     const navigation = useNavigation()
 
     return (
@@ -21,15 +21,16 @@ export default function Items(props) {
                         width: 150,
                         height: 150, 
                         borderRadius: 10,
+                        alignItems:'center'
                     }} 
                     resizeMode='cover' 
                 />
             </View>
             
             <View style={{flex: 0.6,justifyContent:'center', marginLeft: 10}}>
-                <Text style={{fontSize: 15, fontWeight: 500}}> {name} </Text>
+                <Text style={{fontSize: 17, fontWeight: 500}}> {name} </Text>
                 <Text style={{width: 20}}> {stars} </Text>
-                <Text style={{fontSize: 15, fontWeight: 500, color: 'blue'}}> {price} </Text>
+                <Text style={{fontSize: 20, fontWeight: 500, color: 'blue'}}> {price} </Text>
             </View>
         </TouchableOpacity>
     )
@@ -46,6 +47,7 @@ const styles = StyleSheet.create({
     background: {
         flex: 0.4,
         backgroundColor:'#f7f7f7', 
+        justifyContent:'center',
         alignItems:'center',
         marginHorizontal: 10,
         // transform: [{skewY: '7deg'}],

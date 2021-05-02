@@ -1,6 +1,6 @@
 import React from 'react'
 import { Ionicons, AntDesign } from '@expo/vector-icons';
-import { SafeAreaView, View, Text, StyleSheet, TextInput, FlatList, TouchableOpacity} from 'react-native'
+import { SafeAreaView, View, Text, StyleSheet, TextInput, FlatList } from 'react-native'
 import {ShopData} from '../components/data'
 import Items from './Items';
 
@@ -22,7 +22,7 @@ export default function HomePage() {
                         <AntDesign name="arrowleft" size={20} color="grey" />
                     </View>
                     <View style={styles.icons}>
-                        <Ionicons name="cart-outline" size={20} color="grey" />
+                        <Ionicons name="cart-outline" size={20} color="#22A7F0" />
                     </View>
                 </View>
                 <View style={{marginVertical: 20}}>
@@ -68,7 +68,7 @@ export default function HomePage() {
                         }}>Filter</Text>
                 </View>
             </View>
-             {/* Flatlists to display our data from data.js */}
+             {/* Flatlists to display data from data.js */}
             <View style={{alignSelf:'flex-start', marginVertical: 20}}>
                 <FlatList
                     data={ShopData}

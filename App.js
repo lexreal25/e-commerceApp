@@ -15,11 +15,11 @@ export default function App() {
   return (
     <NavigationContainer style={styles.container}>
       <Stack.Navigator
-        screenOptions={{headerShown: true}}
+        screenOptions={{headerShown: false}}
       >
         <Stack.Screen name='Home' component={HomePage} />
         <Stack.Screen name='Details' component={Details}/>
-        <Stack.Screen name='Items' component={Items}/>
+        <Stack.Screen name='Items' component={Items} />
       </Stack.Navigator>
     </NavigationContainer>
   );

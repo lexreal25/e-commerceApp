@@ -1,4 +1,5 @@
 import React from 'react'
+import { View } from 'react-native'
 import { Rating } from 'react-native-ratings'
 
 const stars = <Rating
@@ -8,11 +9,13 @@ const stars = <Rating
                 ratingBackgroundColor='#f7f7f7'
              />
 
+// const size= ['XS', 'S', 'M', 'L', 'XL']
+// const sizes = size.map((eachSize) => <View style={{flex}}>{eachSize}</View>)
 
 export const ShopData =[
     {
         id: 1,
-        name: '',
+        name: 'Nike Blazer White Out',
         stars,
         price: '$99',
         image: require('../assets/blazer.jpg'),
