@@ -12,7 +12,7 @@ export default function Items(props) {
     return (
         <TouchableOpacity style={styles.container}
             onPress= {() => navigation.navigate('Details', {
-                name,stars,image, description, material
+                name,stars,image, description, material, price
             }) }
          >
             <View style={styles.background}>
@@ -28,7 +28,7 @@ export default function Items(props) {
             </View>
             
             <View style={{flex: 0.6,justifyContent:'center', marginLeft: 10}}>
-                <Text style={{fontSize: 17, fontWeight: 500}}> {name} </Text>
+                <Text numberOfLines={1} ellipsizeMode style={{fontSize: 17, fontWeight: 500}}> {name} </Text>
                 <Text style={{width: 20}}> {stars} </Text>
                 <Text style={{fontSize: 20, fontWeight: 500, color: 'blue'}}> {price} </Text>
             </View>

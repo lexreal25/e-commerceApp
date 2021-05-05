@@ -10,7 +10,7 @@ import Items from './Items';
 export default function HomePage() {
 
     return (
-        <SafeAreaView>
+        <SafeAreaView style={styles.container}>
             <View style={{marginHorizontal: 15}}>
                 <View style={{
                     flexDirection:'row',
@@ -56,7 +56,6 @@ export default function HomePage() {
                             alignItems:'center',
                             backgroundColor:'#fff',
                             borderRadius: 25,
-                            height: '100%',
                         }}
                      />
                      <Text style={{
@@ -69,7 +68,7 @@ export default function HomePage() {
                 </View>
             </View>
              {/* Flatlists to display data from data.js */}
-            <View style={{alignSelf:'flex-start', marginVertical: 20}}>
+            <View style={{marginVertical: 20}}>
                 <FlatList
                     data={ShopData}
                     numColumns= {1}
@@ -82,6 +81,9 @@ export default function HomePage() {
 }
 
 const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+    },
     icons:{
         backgroundColor:'#fff',
         alignItems:'center',

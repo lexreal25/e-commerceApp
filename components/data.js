@@ -1,25 +1,27 @@
 import React from 'react'
-import { View } from 'react-native'
 import { Rating } from 'react-native-ratings'
 
 const stars = <Rating
-                type='custom'
+                //type='custom'
                 ratingCount={5} 
+                rated={3.3}
                 imageSize={14} 
-                ratingBackgroundColor='#f7f7f7'
+                ratingBackgroundColor="#d4d4d4"
+                
              />
 
 // const size= ['XS', 'S', 'M', 'L', 'XL']
 // const sizes = size.map((eachSize) => <View style={{flex}}>{eachSize}</View>)
 
+
 export const ShopData =[
     {
         id: 1,
-        name: 'Nike Blazer White Out',
+        name: 'Nike Blazer White Out ellipsesMode',
         stars,
         price: '$99',
         image: require('../assets/blazer.jpg'),
-        material: 'Leather',
+        material: '65% Leather and 35% Polyster',
         description: 'This section shall contain the description of the item'
     },
     {
